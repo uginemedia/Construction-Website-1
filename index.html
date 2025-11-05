@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildingCo - Whole House Renovations</title>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <!-- GSAP SPLITTEXT -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="top-bar">
+          <div class="top-contact-info">
+            <span><ion-icon name="call-outline"></ion-icon> 0123 456 7890</span>
+            <span
+              ><ion-icon name="mail-outline"></ion-icon>
+              info@buildingco.com</span
+            >
+          </div>
+          <div class="top-social-icons">
+            <a href="#" aria-label="Facebook"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <a href="" class="logo">BuildingCo</a>
+          <div class="nav-actions">
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <a href="#" class="nav-button">Get a Quote</a>
+            <button
+              class="hamburger"
+              id="hamburger-menu"
+              aria-label="Toggle menu"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Crafting Exceptional Whole Home Renovations</h1>
+            <p>
+              BuildingCo offers bespoke renovation services, transforming your
+              house into the dream home you've always envisioned. From concept
+              to completion, we deliver unparalleled quality and timeless design
+              across the North West.
+            </p>
+            <a href="#" class="hero-button">Discover Our Projects</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./images/hero.jpg"
+            alt="Modern renovated kitchen and living space"
+          />
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <h2>Our Refined Renovation Process</h2>
+          <p>
+            We offer a comprehensive home design & build service, working with
+            clients in Liverpool and throughout the North West. Our focus is on
+            meticulous planning, exquisite craftsmanship, and seamless project
+            management to bring your vision to life.
+          </p>
+
+          <div class="gallery-grid">
+            <div class="gallery-item gallery-1">
+              <img
+                src="./images/about-1.jpg"
+                alt="Luxury kitchen refurbishment"
+              />
+              <div class="gallery-overlay">
+                <h3>Luxury Kitchens</h3>
+                <p>
+                  Designing and installing kitchens that blend functionality
+                  with sophisticated aesthetics.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item gallery-2">
+              <img src="/images/about-2.jpg" alt="Elegant bathroom design" />
+              <div class="gallery-overlay">
+                <h3>Elegant Bathrooms</h3>
+                <p>
+                  Creating spa-like bathroom retreats with premium fixtures and
+                  finishes.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/about-3.jpg" alt="Modern living spaces" />
+              <div class="gallery-overlay">
+                <h3>Modern Living Spaces</h3>
+                <p>
+                  Transforming living areas into open, inviting, and stylish
+                  environments.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/about-4.jpg" alt="Stylish home extensions" />
+              <div class="gallery-overlay">
+                <h3>Home Extensions</h3>
+                <p>
+                  Expanding your living space with thoughtful and harmonious
+                  extensions.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/about-5.jpg" alt="Outdoor living areas" />
+              <div class="gallery-overlay">
+                <h3>Outdoor Living</h3>
+                <p>
+                  Crafting luxurious outdoor spaces for relaxation and
+                  entertainment.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/about-6.jpg" alt="Architectural detailing" />
+              <div class="gallery-overlay">
+                <h3>Architectural Detailing</h3>
+                <p>
+                  Enhancing your home with bespoke architectural features and
+                  finishes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us">
+        <div class="container">
+          <h2>Why Choose BuildingCo for Your Renovation?</h2>
+          <div class="choose-us-content">
+            <div class="choose-us-item">
+              <ion-icon name="megaphone-outline"></ion-icon>
+              <h3>Client-Centric Approach</h3>
+              <p>
+                We prioritize your vision, working closely with you from initial
+                design to final touches to ensure your complete satisfaction.
+              </p>
+            </div>
+            <div class="choose-us-item">
+              <ion-icon name="trophy-outline"></ion-icon>
+              <h3>Unrivaled Quality</h3>
+              <p>
+                Our commitment to excellence ensures every detail is executed
+                with the highest standards of craftsmanship and premium
+                materials.
+              </p>
+            </div>
+            <div class="choose-us-item">
+              <ion-icon name="cog-outline"></ion-icon>
+              <h3>Seamless Project Management</h3>
+              <p>
+                Experience a stress-free renovation journey with our expert team
+                handling all aspects of your project efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certifications-section">
+        <div class="container">
+          <h2>Our Valued Accreditations & Partnerships</h2>
+          <div class="cert-logos">
+            <img
+              src="https://placehold.co/150x60/f5f0eb/333333?text=NICEIC"
+              alt="NICEIC Logo"
+            />
+            <img
+              src="https://placehold.co/150x60/f5f0eb/333333?text=Gas+Safe"
+              alt="Gas Safe Logo"
+            />
+            <img
+              src="https://placehold.co/150x60/f5f0eb/333333?text=FMB"
+              alt="Federation of Master Builders Logo"
+            />
+            <img
+              src="https://placehold.co/150x60/f5f0eb/333333?text=TrustMark"
+              alt="TrustMark Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback-section">
+        <div class="container">
+          <h2>Feedback From Our Esteemed Clients</h2>
+          <div class="feedback-grid">
+            <div class="video-testimonial">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/AXQogDzxOoM?si=tQz_ZRsURJ5QpSHx"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="text-testimonials">
+              <div class="testimonial-card">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <p>
+                  "BuildingCo transformed our outdated house into a modern
+                  masterpiece. Their attention to detail and commitment to
+                  quality was truly outstanding. We couldn't be happier with our
+                  luxurious new home!"
+                </p>
+                <div class="testimonial-author">Sarah & John D.</div>
+                <div class="testimonial-source">Liverpool, UK</div>
+              </div>
+              <div class="testimonial-card">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <p>
+                  "From the initial consultation to the final handover, the team
+                  at BuildingCo was professional, innovative, and incredibly
+                  efficient. Our extension is exactly what we dreamed of, and
+                  more."
+                </p>
+                <div class="testimonial-author">Michael R.</div>
+                <div class="testimonial-source">Cheshire, UK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="google-reviews">
+        <div class="container">
+          <h3>Read More 5-Star Reviews on Google</h3>
+          <div class="google-reviews-grid">
+            <div class="google-review-card">
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p>
+                "Excellent service from start to finish. The team were always on
+                time and finished the project ahead of schedule. Highly
+                recommend for any home renovation."
+              </p>
+              <div class="author">Emily W.</div>
+            </div>
+            <div class="google-review-card">
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p>
+                "Professional, tidy, and their work quality is simply superb.
+                Our new kitchen is the envy of all our friends. Thank you,
+                BuildingCo!"
+              </p>
+              <div class="author">David P.</div>
+            </div>
+            <div class="google-review-card">
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon
+                ><ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p>
+                "We had a full house refurbishment, and BuildingCo managed
+                everything perfectly. The communication was great, and the
+                result is stunning."
+              </p>
+              <div class="author">Jessica T.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-content">
+          <h2>Ready to Transform Your Home?</h2>
+          <p>
+            Get a project started with BuildingCo and experience the difference
+            of premium design and impeccable craftsmanship.
+          </p>
+          <button class="cta-button">Get Your Free Consultation Today</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-info">
+            <h3>BuildingCo</h3>
+            <p>
+              Crafting exceptional living spaces across the North West. Your
+              vision, our expertise.
+            </p>
+            <p>
+              <ion-icon name="location-outline"></ion-icon> 123 Renovation
+              Drive, Liverpool, L1 1AB
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> 0123 456 7890</p>
+            <p><ion-icon name="mail-outline"></ion-icon> info@buildingco.com</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Portfolio</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Kitchen Renovations</a></li>
+              <li><a href="#">Bathroom Refurbishments</a></li>
+              <li><a href="#">Home Extensions</a></li>
+              <li><a href="#">Full House Remodels</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="footer-social-icons">
+              <a href="#" aria-label="Facebook"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 BuildingCo. All rights reserved. |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IONICON CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
