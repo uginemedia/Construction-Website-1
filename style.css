@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500&display=swap");
 
 :root {
-  --primary-color: #1a2a46; /* Deep Midnight Blue */
-  --secondary-color: #c09f80; /* Refined Gold Taupe */
-  --accent-color: #a87f5e; /* Warm Bronze */
-  --light-bg: #f5f0eb; /* Soft Off-White */
-  --text-color: #333333; /* Dark Gray */
+  --primary-color: #1a2a46;
+  --secondary-color: #c09f80;
+  --accent-color: #a87f5e;
+  --light-bg: #f5f0eb;
+  --text-color: #333333;
   --light-text: #ffffff;
   --border-color: #e0e0e0;
   --body-font: "Poppins", sans-serif;
@@ -135,7 +135,6 @@ header {
   color: var(--light-text);
 }
 
-/* Mobile Menu Hamburger */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -665,12 +664,11 @@ footer {
     color: var(--accent-color);
 }
 
-/* === Responsive Adjustments: Tablet and Mobile === */
 
 /* Tablet Styles (<= 992px) */
 @media (max-width: 992px) {
   .nav-links {
-    display: none; /* Hide nav links by default */
+    display: none; 
     position: absolute;
     left: 0;
     top: 100%;
@@ -683,7 +681,7 @@ footer {
   }
 
   .nav-links.active {
-    display: flex; /* Show when active */
+    display: flex; 
   }
 
   .nav-links li {
@@ -691,10 +689,9 @@ footer {
   }
 
   .hamburger {
-    display: block; /* Show hamburger */
+    display: block; 
   }
 
-  /* Hamburger animation */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -706,28 +703,20 @@ footer {
   }
 
   .nav-button {
-    display: none; /* Hide the button next to links */
-  }
-
-  /* Show a full-width button inside the mobile menu */
-  .nav-links .nav-button-mobile {
-    display: block;
-    margin-top: 15px;
-    text-align: center;
-    width: 80%;
+    display: none; 
   }
 
   .hero-section {
     flex-direction: column;
     text-align: center;
     min-height: auto;
-    padding: 60px 0 0 0; /* Adjust padding */
+    padding: 60px 0 0 0;
   }
 
   .hero-content {
     padding-right: 0;
     margin-bottom: 40px;
-    order: 2; /* Content comes after image */
+    order: 2; 
   }
 
   .hero-content p {
@@ -738,7 +727,7 @@ footer {
     position: relative;
     width: 100%;
     height: 400px;
-    order: 1; /* Image comes first */
+    order: 1; 
   }
 
   .hero-image img {
@@ -797,7 +786,7 @@ footer {
 /* Small Mobile Styles (<= 480px) */
 @media (max-width: 480px) {
   .top-bar {
-    display: none; /* Hide top bar on very small screens for simplicity */
+    display: none; 
   }
 
   .hero-content h1 {
